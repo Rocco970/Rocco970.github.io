@@ -5,24 +5,22 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body id="dadbod">
-    <p class="c">"🎃🎃🎃"</p> 
-    <p class="c" id="pickupLineText"></p> 
+    <p id="pickupLine"></p> 
  
     <script>
       function swoon() {
-        document.getElementById("pickupLineText").innerHTML = "Are you sugar? Because you’re sweet and I wanna spoon you.";
+        document.getElementById("pickupLine").innerHTML = "🎃🎃🎃&#13;" + "Are you sugar? Because you’re sweet and I wanna spoon you.";
       }
       window.onload = swoon;
     </script>
     
     <style>
-      .c {
+      #pickupLine {
         margin: 0;
         position: absolute;
         top: 50%;
         left: 50%;
         font-size: 3rem;
-        width: 80%;
         transform: translate(-50%, -50%) 
       }
       
