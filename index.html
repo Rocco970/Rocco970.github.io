@@ -4,12 +4,12 @@
     <title>Salut</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
-  <body>
-    🎃 <p id="pickupLine"></p> 🎃
+  <body id="dadbod">
+    <p id="pickupLine"></p> 
  
     <script>
       function swoon() {
-        document.getElementById("pickupLine").innerHTML = "Paragraph changed.";
+        document.getElementById("pickupLine").innerHTML = 🎃 + " Paragraph changed. " +  🎃;
       }
       window.onload = swoon;
     </script>
@@ -23,7 +23,7 @@
         transform: translate(-50%, -50%) 
       }
       
-      html {
+      #dadbod {
         backgroud-color: #121212;
         color: #EB6123;
       }
