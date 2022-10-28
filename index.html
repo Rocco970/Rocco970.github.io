@@ -9,7 +9,10 @@
  
     <script>
       function swoon() {
-        const pickupLines = ["Are you sugar? Because you’re sweet and I wanna spoon you.", "Are you a microwave? Because mmmmmmmmm."];
+        const pickupLines = [
+          "Are you sugar? Because you’re sweet and I wanna spoon you.", 
+          "Are you a microwave? Because mmmmmmmmm."
+        ];
         const pickupLine = pickupLines[Math.floor(Math.random() * pickupLines.length)];
         document.getElementById("pickupLine").innerHTML = pickupLine + " 🎃🎃🎃";
       }
