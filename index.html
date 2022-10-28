@@ -5,6 +5,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
+    <div id="container"> 
+    </div>
     <p id="pickupLine"></p>
   
     <script>
@@ -13,6 +15,21 @@
       }
       window.onload = swoon;
     </script>
-    
+    <style>
+      #container {
+        height: 10em;
+        position: relative 
+      }
+      
+      #container p {
+        margin: 0;
+        background: yellow;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+      }
+    </style>
   </body>
 </html>
