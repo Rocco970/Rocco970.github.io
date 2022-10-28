@@ -5,11 +5,13 @@
   </head>
   <body>
     <p id="pickupLine">This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+  
+    <script>
+    function swoon() {
+      document.getElementById("pickupLine").innerHTML = "Paragraph changed.";
+    }
+    window.onload = swoon;
+  </script>
+    
   </body>
 </html>
-
-<script>
-function myFunction() {
-  document.getElementById("pickupLine").innerHTML = "Paragraph changed.";
-}
-</script>
