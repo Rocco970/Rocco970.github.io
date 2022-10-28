@@ -5,10 +5,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <div id="container"> 
-    </div>
-    <p id="pickupLine"></p>
-  
+    🎃 <p id="pickupLine"></p> 🎃
+ 
     <script>
       function swoon() {
         document.getElementById("pickupLine").innerHTML = "Paragraph changed.";
@@ -17,19 +15,18 @@
     </script>
     
     <style>
-      #container {
-        height: 10em;
-        position: relative 
-      }
-      
       #pickupLine {
         margin: 0;
-        background: yellow;
         position: absolute;
         top: 50%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%) 
+      }
+      
+      html {
+        backgroud-color: #121212;
+        color: #EB6123;
       }
     </style>
   </body>
